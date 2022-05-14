@@ -1,0 +1,83 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+body {
+        font-family: "Lato", sans-serif;
+}
+
+h2 {
+        font-size: 90px;
+        font-weight: bold;
+        padding: 20px;
+        font-family: 'Source Code Pro', monospace;
+        color: #f9713f;
+}
+
+.soon {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+}
+
+.countDown {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+}
+
+.day,
+.hour,
+.minute,
+.second {
+        font-size: 30px;
+
+
+}
+
+.grad {
+        height: 50vh;
+        margin-top: 30px;
+        position: relative;
+        left: 0%;
+        bottom: 0;
+        animation: MoveUpDown 2s linear infinite;
+}
+
+@keyframes MoveUpDown {
+
+        0%,
+        100% {
+                bottom: 0;
+        }
+
+        50% {
+                bottom: 20px;
+        }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+        h2 {
+                font-size: 50px;
+               
+        }
+
+        .day,
+        .hour,
+        .minute,
+        .second {
+                font-size: 25px;
+        }
+
+        .grad {
+                height: 360px;
+                width: 450px;
+
+        }
+}
